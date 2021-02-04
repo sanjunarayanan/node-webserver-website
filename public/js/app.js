@@ -1,5 +1,3 @@
-console.log("client side java script is loaded..")
-
 const wheatherForm = document.querySelector('form')
 const searchText = document.querySelector('input')
 const messageOne = document.querySelector('#message1')
