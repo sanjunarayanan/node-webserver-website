@@ -6,10 +6,14 @@ const port = process.env.PORT || 7000
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname,'../template/views')
 const partialPath = path.join(__dirname,'../template/partials')
+
+
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 hbs.registerPartials(partialPath)
+
+
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
@@ -17,7 +21,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
   res.render('index', {
       name: 'sanju',
-      title: 'Hello World !..'
+      title: 'Welcome to Node.JS'
   })
 })
 
