@@ -55,11 +55,6 @@ app.get('*', (req, res) => {
   res.send("error")
 })
 
-
-
-
-
-
 app.listen(port, () => {
   console.log('Server is up on port ' + port)
 })
